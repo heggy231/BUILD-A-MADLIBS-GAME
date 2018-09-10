@@ -28,3 +28,28 @@ var prompts = [
 prompts variable contains an array; array
 
 http://jsbin.com/fuqovem/2/edit?html,output
+- to check if JS works, write an alert!
+alert(prompts.length); // how many items are in this array.
+
+- alert one of item in the prompt array
+alert(2);
+alert(name);
+
+- To alert number or var, you put inside parentheses
+alert(prompts[0]);
+
+When built Cotter's robot, used JQuery function .css to shove the info out of JS into CSS stylesheet
+ ex) $("body").css("background", randomRGBA);
+
+- JQuery function .html move info out of JS into HTML markup.
+  1) make an empty HTML container to hold the content that JS will spit out.
+  <body>
+  // empty HTML container to hold the content that JS
+  <div class="prompt"></div> 
+
+http://jsbin.com/fuqovem/4/edit?html,output
+
+  * JQuery .html function:
+  // find a class named .prompt; put prompt[0] content inside HTML markup.
+  $('.prompt').html(prompts[0]);
+
