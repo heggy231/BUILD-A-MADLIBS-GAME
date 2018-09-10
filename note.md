@@ -12,3 +12,19 @@ Our mission for 1st lesson:
   * Josh asked Debbie on a "panda bear" to go "poop" with him.
 
   * Josh asked Debbie on a "chair" to go "bounce" with him.
+
+  * Our JS Mad Lib will ask the user one question, and then after they answer it, a brand new question will appear on screen as if by magic!
+
+- Mad Lib, we can either have many individual variables, OR try hold a bunch of different pieces of information in one fancy value.  Such as data type arrays.
+  var array = [ thing1, thing2, thing3 ];
+
+// List of prompts for the user
+var prompts = [
+  'Type your name',
+  'Type an adjective',
+  'Type a noun'
+];
+
+prompts variable contains an array; array
+
+http://jsbin.com/fuqovem/2/edit?html,output
