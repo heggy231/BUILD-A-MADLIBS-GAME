@@ -53,3 +53,9 @@ http://jsbin.com/fuqovem/4/edit?html,output
   // find a class named .prompt; put prompt[0] content inside HTML markup.
   $('.prompt').html(prompts[0]);
 
+  - Make it show 3rd prompts!
+  $('.prompt').html(prompts[2]);
+http://jsbin.com/fuqovem/5/edit?html,output
+
+
+
