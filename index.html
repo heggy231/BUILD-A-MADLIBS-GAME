@@ -22,7 +22,9 @@ var prompts = [
   'Type a noun'
 ];
 
-// alert(prompts[0]);
+// currentPrompt Keep track of current prompt we're on. 
+// starting at first prompt!
+var currentPrompt = 0;
 
 //find a class named .prompt; put prompt[0] content inside HTML markup.
 $('.prompt').html(prompts[2]);

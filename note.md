@@ -57,5 +57,20 @@ http://jsbin.com/fuqovem/4/edit?html,output
   $('.prompt').html(prompts[2]);
 http://jsbin.com/fuqovem/5/edit?html,output
 
+- Mission: 
+1) Change which prompt shows up on screen with the click of a button
+2) Figure out how to move around inside an array (so the button works!)
+
+In the last lesson, we manually wrote .html function 
+based on which prompt number we want prompts[i]
+  $('.prompt').html(prompts[0]);
+
+  - now JS will write dynamically (change) itself i of prompts[i]
+    1) start with variable 
+    // currentPrompt Keep track of current prompt we're on. starting at first prompt!
+      var currentPrompt = 0;
+
+    - var currentPrompt is a magic box holding a number value that's set to start off at 0.  The number can change with JS, but the name of the var will always stay the same.  
+    * like the num in randomRGBA did!
 
 
