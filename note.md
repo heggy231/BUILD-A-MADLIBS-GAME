@@ -8,3 +8,7 @@ Our mission for 1st lesson:
 - Mad Lib is a word substitution game that uses parts of speech
   ex) Give me a Noun! < Panda Bear!
   Give me a Verb! < Poop!
+
+  * Josh asked Debbie on a "panda bear" to go "poop" with him.
+
+  * Josh asked Debbie on a "chair" to go "bounce" with him.
