@@ -126,3 +126,29 @@ http://jsbin.com/fuqovem/7/edit?html,output
 2) Give JS something useful to say when it runs out of prompts in the array.
 3) Fancify your MadLibs app with CSS
 
+We are writing JS that moves thru an array of prompts, asking the user or info.
+
+Lesson 3 Mission: 
+1) Make the first prompt visible on the page load.
+2) Write 'if' statement
+3) Create an alternate ending with an 'else' statement.
+
+- Recall, after wrapping HTML function inside 'nextPrompt' the first prompt waited for a click before showing up the screen.
+
+  // A function that will call the next prompt
+  var nextPrompt = function() {
+    // put first prompt in all html elements with class prompt
+    $('.prompt').html(prompts[currentPrompt]);
+  }
+
+  Just defining the function isn't always enough to make it run.  Trick to make sure that the first prompt shows up right away.
+  * you can tell nextPrompt to run, independently of the button, just by calling it in your script.
+
+  All you need to do call the function is say its name.  It goes at the end of your script.
+  
+  // Show the 1st prompt as soon as js loads
+  nextPrompt(); // calling the function 
+
+  - The reason nextPrompt() was called at the bottom, so it read top to bottom, it doesn't know until the end what nextPrompt is (like CSS). After you tell it then JS knows.  
+
+  
