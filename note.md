@@ -73,4 +73,17 @@ based on which prompt number we want prompts[i]
     - var currentPrompt is a magic box holding a number value that's set to start off at 0.  The number can change with JS, but the name of the var will always stay the same.  
     * like the num in randomRGBA did!
 
+    2) go back to .html function: instead of (prompts[0]), you can say (prompts[currentPrompt]).
+      $('.prompt').html(prompts[currentPrompt]);
+
+    3) Next, Add button
+    <button>Next</button>
+      http://jsbin.com/fuqovem/6/edit?html,output
+
+    4) Add function to button
+    // run nextPrompt function when button is clicked
+    $('button').click(function() {
+      nextPrompt();
+    });
+
 
