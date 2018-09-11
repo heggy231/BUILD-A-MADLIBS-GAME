@@ -34,6 +34,8 @@ var currentPrompt = 0;
 var nextPrompt = function() {
   // if there is a next prompt
   if (currentPrompt < prompts.length) {
+    // alert the .val of the form
+	  alert($('input').val());
     // put first prompt in all html elements with class prompt
     $('.prompt').html(prompts[currentPrompt] + '<br><input type="text">');
     // move the next prompt into variable currentPrompt

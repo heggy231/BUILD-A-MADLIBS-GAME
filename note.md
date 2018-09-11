@@ -254,3 +254,12 @@ http://jsbin.com/fuqovem/13/edit?html,output
 - What happens to what you type? It disappears.  Tell JS to grab the stuff and hold on to it! store.  Like prompts array to hold prompts, catch answers in answers array!  Set up an empty array.
   // here's an array to keep answers in
   var answers =[];
+
+ 2) Tell JS to talk to input field and answer array need to exchange info.
+ '<br><input type="text">' and var answers =[]; need to talk to eachother!
+
+ - Meet val(): The same way you alert length of an array to make sure there were things in it, we can use a JQuery method called val() to give us the value contained in the input field.  
+	  // alert the .val of the form
+	  alert($('input').val());
+  // note $ dollar sign is shorthand that says "this thing is a JQuery object!"
+  Add this alert before an empty form gets added to your page.
