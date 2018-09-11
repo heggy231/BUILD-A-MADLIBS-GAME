@@ -116,3 +116,13 @@ Remember how what's inside a variable changes but the variable name stay the sam
 That value will change from the first item in the array(0) to the second(1), then third(2). To change the value we add +1.
 // move the next prompt into variable currentPrompt
 currentPrompt = currentPrompt + 1;
+
+http://jsbin.com/fuqovem/7/edit?html,output
+  - currentPrompt isn't static value; it's a box.
+  Increment currentPrompt by 1! which moves the position of i to next in the array.
+
+- Next lesson goal:
+1) Make the first prompt show up before the first click
+2) Give JS something useful to say when it runs out of prompts in the array.
+3) Fancify your MadLibs app with CSS
+
