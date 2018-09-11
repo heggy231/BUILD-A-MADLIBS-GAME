@@ -258,8 +258,17 @@ http://jsbin.com/fuqovem/13/edit?html,output
  2) Tell JS to talk to input field and answer array need to exchange info.
  '<br><input type="text">' and var answers =[]; need to talk to eachother!
 
- - Meet val(): The same way you alert length of an array to make sure there were things in it, we can use a JQuery method called val() to give us the value contained in the input field.  
+ - Meet .val(): The same way you alert length of an array to make sure there were things in it, we can use a JQuery method called .val() to give us the value contained in the input field.  
 	  // alert the .val of the form
 	  alert($('input').val());
   // note $ dollar sign is shorthand that says "this thing is a JQuery object!"
   Add this alert before an empty form gets added to your page.
+
+When running, alert box says "undefined" why?
+  When JS 1st loads up on the page, the input field is empty!  There's nothing in it, so there's nothing for JS to alert!  But the field exists, and undefined acknowledges that by helpfully telling you that there's no content in it.
+
+  Now, dismiss the first undefined window.  Enter your name, see your name alert back to you!
+  Whatever you typed shows up!
+
+- Now that we know asking .val() stores the content of input really does work.
+  $('input').val()
