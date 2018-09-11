@@ -151,4 +151,51 @@ Lesson 3 Mission:
 
   - The reason nextPrompt() was called at the bottom, so it read top to bottom, it doesn't know until the end what nextPrompt is (like CSS). After you tell it then JS knows.  
 
+- Right now, your nextPrompt function runs forward thru the items in your prompts array.  It doesn't know what to do when it hits the last thing in the array.  This is where we tell it!
+Mission: nextPrompt needs to:
+  1) Find out if it is at the end of prompt array
+  2) Move the next prompt into var currentPrompt (done)
+    currentPrompt = currentPrompt + 1;
+  3) Stick the new currentPrompt into HTML (done)
+    part from nextPrompt() = $('.prompt').html(prompts[currentPrompt]);
+
+    $('button').click(function() {
+      nextPrompt();
+    });
+
+  4) Inform the user when it runs out of new prompts
+
+1) Find out if it is at the end of prompt array
+  - Is there another prompt?  
+    yes: display the next prompt in the page's HTML
+    no: display a message that no more prompts are available.
+
+  Convert this into JS language.
+    IF there is another prompt, show the next prompt.  If not, do something ELSE
+
+    if (something) {
+      // do this;
+    } else {
+      // do this instead;
+    }
   
+  - Add an if statement to your function:
+  if (something), {
+    run code in the 
+    nextPrompt
+    function
+  }
+
+  - Add else statement
+  var nextPrompt = function() {
+    // if there is a next prompt
+    if () {
+      // put first prompt in all html elements with class prompt
+      $('.prompt').html(prompts[currentPrompt]);
+      // move the next prompt into variable currentPrompt
+      currentPrompt = currentPrompt + 1;
+    // or else if we're at the end of the array
+    } else {
+
+    }
+  }

@@ -29,10 +29,16 @@ var currentPrompt = 0;
 
 // A function that will call the next prompt
 var nextPrompt = function() {
-  // put first prompt in all html elements with class prompt
-  $('.prompt').html(prompts[currentPrompt]);
-  // move the next prompt into variable currentPrompt
-  currentPrompt = currentPrompt + 1;
+  // if there is a next prompt
+  if () {
+    // put first prompt in all html elements with class prompt
+    $('.prompt').html(prompts[currentPrompt]);
+    // move the next prompt into variable currentPrompt
+    currentPrompt = currentPrompt + 1;
+  // or else if we're at the end of the array
+  } else {
+
+  }
 }
 
 // run nextPrompt function when button is clicked
