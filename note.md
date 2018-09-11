@@ -86,4 +86,21 @@ based on which prompt number we want prompts[i]
       nextPrompt();
     });
 
+    Summary; when any button is clicked, run a function called nextPrompt.
 
+    - variable nextPrompt.  It will make a 'click'ing on your button grab and display the-wait for it-next prompt!
+
+    You've made variables that have numbers in them and variables that have arrays in them.  nextPrompt() contains a function.
+
+    * nextPrompt() will do 2 things:
+    1) Get the array number of the next prompt out of the prompts array, and into your variable currentPrompt
+
+    2) Stick the text that corresponds to the array number of the new currentPrompt into the HTML
+    
+    Frame of the variable called, nextPrompt, that will change currentPrompt's value.  Wrap it around your html function.  
+
+    // A function that will call the next prompt
+    var nextPrompt = function() {
+      // put first prompt in all html elements with class prompt
+      $('.prompt').html(prompts[currentPrompt]);
+    }

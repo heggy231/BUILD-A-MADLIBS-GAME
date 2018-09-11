@@ -27,8 +27,11 @@ var prompts = [
 // starting at first prompt!
 var currentPrompt = 0;
 
-//find a class named .prompt; put prompt[0] content inside HTML markup.
-$('.prompt').html(prompts[currentPrompt]);
+// A function that will call the next prompt
+var nextPrompt = function() {
+  // put first prompt in all html elements with class prompt
+  $('.prompt').html(prompts[currentPrompt]);
+}
 
 // run nextPrompt function when button is clicked
 $('button').click(function() {
