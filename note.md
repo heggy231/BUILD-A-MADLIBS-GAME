@@ -248,3 +248,9 @@ Interactive Mad Lib game.  Currently, it holds three questions and displays them
       - let's put form field in HTML-JS
       // add (+) a line break (<br>) after the prompt, and stick a form field (<input>) on the new line.
       $('.prompt').html(prompts[currentPrompt] + '<br><input type="text">');
+
+http://jsbin.com/fuqovem/13/edit?html,output
+
+- What happens to what you type? It disappears.  Tell JS to grab the stuff and hold on to it! store.  Like prompts array to hold prompts, catch answers in answers array!  Set up an empty array.
+  // here's an array to keep answers in
+  var answers =[];
