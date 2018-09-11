@@ -199,3 +199,52 @@ Mission: nextPrompt needs to:
 
     }
   }
+http://jsbin.com/fuqovem/10/edit?html,output
+
+- If there is another prompt..
+  How can JS figure out if there are more prompts coming up next?
+  * use length property of array! if the number held in currentPrompt is smaller than the total number of prompts.
+  var currentPrompt = 0;
+  if (currentPrompt < prompts.length) {}
+
+  - this is saying if 0 is less than 3, do something.  true 
+  - This is how this dash slides work, we have 'slide.lenght' var that advances the 'nextSlide'.  When it hits end, JS makes it rain!
+
+  - What does JS do when currentPrompt is less than length?
+    It runs hmtl function inside nextPrompt then adds 1 to currentPrompt
+
+    At the last prompt >= length, else stmt that pushes "no more prompts" into .prompt class
+    else {
+      $('.prompt').html("no more prompts");
+    }
+
+Summary: 
+  3 things happen as you run JS:
+  1) A variable defines the contents of prompts array, with a length of 3.
+  2) currentPrompt gets set to 0.
+  3) The nextPrompt function is run.
+
+- NextPrompt does this:
+(the first time it runs, when currentPrompt = 0)
+1. Is 0 < prompt.length? yes
+2. Put prompt number 0 in HTML ('Type your name')
+3. Then add 1 to 0! (this changes currentPrompt to 1)
+
+- Next lesson, you'll learn 
+1. Form fields, use them to capture responses for each prompt
+2. Make JS remember the answers your users type into the forms.
+
+Interactive Mad Lib game.  Currently, it holds three questions and displays them as your player interacts with the game.  Now we want user inputs.
+
+- Mission:
+1) Code up a place for the answers to each prompt to go!
+2) Tell JS to remember those answers
+3) Modify your else stmt to display the user-provided answers when it runs out of prompts.
+
+1) Code up a place for the answers to each prompt to go!
+  - 2 parts to collecting user info
+    1) form field with HTML <input type="email">
+      User can type in info but the data evaporates as they submit
+      - let's put form field in HTML-JS
+      // add (+) a line break (<br>) after the prompt, and stick a form field (<input>) on the new line.
+      $('.prompt').html(prompts[currentPrompt] + '<br><input type="text">');
