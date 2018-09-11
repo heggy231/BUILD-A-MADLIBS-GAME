@@ -104,3 +104,15 @@ based on which prompt number we want prompts[i]
       // put first prompt in all html elements with class prompt
       $('.prompt').html(prompts[currentPrompt]);
     }
+
+  - There's one unintended thing that 'nextPrompt' does.  Putting your 'html' function inside the 'nextPrompt' function creates dependency: The 'html' function won't push any prompt into the HTML until the 'click' calls 'nextPrompt'!
+
+Currently button only works only once.  Next, figure out how to advance to next prompt (address the html function)
+
+Remember how what's inside a variable changes but the variable name stay the same?  From part3 of the CSS robot, randomRGBA whose value changed every time you clicked a button.  However, name remained the same randomRGBA.
+
+- That's what is happening to currentPrompt variable.  Click the button changes the number value inside the currentPrompt variable.
+
+That value will change from the first item in the array(0) to the second(1), then third(2). To change the value we add +1.
+// move the next prompt into variable currentPrompt
+currentPrompt = currentPrompt + 1;
