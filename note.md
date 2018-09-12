@@ -398,7 +398,13 @@ input {
   - Next, tell CSS to style .fill answer part
   // assign background color: white, font color: red, solid black border: just on the bottom
   .fill {
-    background: white;
-    color: red;
+    background: white; // background color is white
+    color: red; // font color is red
     border-bottom: 2px black solid;
   }
+
+  - Add font Shadow Into Light to make it look like hand writing, pdding to make the white box a little wider, margin to put space betwn the words in the boxes and the rest of the sentence.
+    font-family: 'Shadows Into Light'; 
+    padding: 0 6px; // makes white box wider
+    margin: 4px; // margin put space btwn the words in boxes and the rest of the sentence that is not user input.
+  http://jsbin.com/fuqovem/19/edit?html,output
