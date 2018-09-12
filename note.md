@@ -331,3 +331,13 @@ Mission:
 2) Connect player answers into a real Mad Libs story
 3) Add some CSS to make the app styling!
 
+- The next button should vanish once prompts have been answered!
+JQuery has function
+var showFinal = function () {
+  $('.prompt').html(answers[0]+' '+answers[1]+' '+answers[2]);
+  $('button').hide();
+}
+
+  this belongs inside your showFinal function.
+  // and then hide the button
+  $('button').hide();
