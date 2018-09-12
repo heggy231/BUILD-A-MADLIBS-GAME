@@ -408,3 +408,6 @@ input {
     padding: 0 6px; // makes white box wider
     margin: 4px; // margin put space btwn the words in boxes and the rest of the sentence that is not user input.
   http://jsbin.com/fuqovem/19/edit?html,output
+
+Done mad lib
+http://jsbin.com/fuqovem/20/edit?html,output

@@ -7,3 +7,5 @@ Cotter's friend Lin wants you to build a Madlibs-style game for her! General Ass
 3) Write your first if/else statement
 4) Make JavaScript capture and return answers
 5) Put it all together with JavaScript and CSS
+
+Demo: http://jsbin.com/fuqovem/edit?html,output
