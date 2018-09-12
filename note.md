@@ -353,3 +353,41 @@ var showFinal = function () {
     $('.prompt').html('This is the story of '+answers[0]+' and the '+answers[1]+' '+answers[2]);
     $('button').hide();
   }
+
+- Now, HTML and JS are settled, we will work on CSS to fancy it up!
+google fonts follow the style rule here: https://developers.google.com/fonts/docs/getting_started
+google.com/fonts > + > copy the link!
+1) Fjalla One is nice big readable type
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+
+2) Shadows Into Light handwritten (hand writing) font Shadows+Into+Light
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
+Put it top of <head> tags.
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  <script src="/assets/jquery.js"></script>
+
+- Apply CSS with new font, text 20px, centered
+body {
+  text-align: center;
+  font-family: 'Fjalla One';
+  font-size: 20px;
+}
+http://jsbin.com/fuqovem/17/edit?html,output
+
+- Give background color to body, Give button some breathing room, Make input box bigger!
+body {
+  //background color
+  background: #e6eaf0
+}
+button {
+  // button some breathing room
+  margin: 40px
+}
+input {
+  font-size: 24px;
+}
+
+- We want mad lib to have underline and red color with different hand writing font (Shadows Into Light).
