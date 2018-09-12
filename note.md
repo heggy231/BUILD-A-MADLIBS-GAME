@@ -391,3 +391,14 @@ input {
 }
 
 - We want mad lib to have underline and red color with different hand writing font (Shadows Into Light).
+  To accomplish this, wrap span with a class called "fill" around the fill-in-the blank parts, so they can have style!
+
+  $('.prompt').html('This is the story of <span class="fill">'+answers[0]+'</span> and the <span class="fill">'+answers[1]+'</span> <span class="fill">'+answers[2]+'</span>.');
+
+  - Next, tell CSS to style .fill answer part
+  // assign background color: white, font color: red, solid black border: just on the bottom
+  .fill {
+    background: white;
+    color: red;
+    border-bottom: 2px black solid;
+  }
