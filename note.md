@@ -272,3 +272,62 @@ When running, alert box says "undefined" why?
 
 - Now that we know asking .val() stores the content of input really does work.
   $('input').val()
+http://jsbin.com/fuqovem/14/edit?html,output
+
+  Let's delete
+  > alert($('input').val());
+
+- JS you wrote can grab any value that's typed into the input field, but how can you tell it to push that content into the array called answers?
+
+  answers.push($('input').val());
+
+  Translation: "push the value from the HTML <input> tag into the answers array."
+
+  But we don't want it every time! (the very first time, input's val is undefined!)
+    if (currentPrompt != 0) {
+      answers.push($('input').val());
+    }
+    // if statement that will only push an answer if you have an answer to push.
+
+  if the currentPrompt is not zero, grab the contents of the input field, and stash it in the answers array:
+    if (currentPrompt != 0) {
+      answers.push($('input').val());
+    }
+  JS uses an ! exclamation point (bang) to mean the opposite of: Not, No, IS Not, Do Not
+
+Add an alert to your else statement.  It should pop up everything in the answers array at the end of the prompts array.
+  } else {
+    $('.prompt').html("no more prompts here");
+    alert(answers);
+
+What happens at the end?? the last answer doesn't show up!
+
+- Final step: Concatenation: smashing things together
+  var randomRGBA = 'rgba('+red+','+green+','+blue+', 1)';
+  // from background color changing in CSS robot lesson: ex concatenation
+
+  - put together new concatenated variable that goes inside of HTML body!
+When function showFinal is run, display answer 0 and a space and answer 1 and a space and answer 2 in the .prompt of your html.
+
+// puts the user's input into the html
+var showFinal = function() {
+  $('.prompt').html(answers[0]+' '+answers[1]+' '+answers[2]);
+}
+
+- currently, we have not made showFinal run. "When a function called showFinal is run.."  When and where should showFinal appear on the screen?
+- You run a function just by saying its name. showFinal();
+
+  We want the answers to show up when there are no more prompts left.
+
+  else {
+    // runs showFinal to put the answers in HTML body
+    showFinal();
+  }
+
+http://jsbin.com/fuqovem/15/edit?html,output
+
+Mission: 
+1) Learn a sneaky new JS function that makes HTML elements vanish!
+2) Connect player answers into a real Mad Libs story
+3) Add some CSS to make the app styling!
+

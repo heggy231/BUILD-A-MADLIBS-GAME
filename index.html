@@ -33,19 +33,28 @@ var currentPrompt = 0;
 // A function that will call the next prompt
 var nextPrompt = function() {
   // if there is a next prompt
-  if (currentPrompt < prompts.length) {
-    // alert the .val of the form
-	  alert($('input').val());
-    // put first prompt in all html elements with class prompt
-    $('.prompt').html(prompts[currentPrompt] + '<br><input type="text">');
+  if (currentPrompt <= prompts.length) {
+    // there's no answer the first time nextPrompt store answer
+    if (currentPrompt !== 0) {
+      answers.push($('input').val());
+      alert(answers);
+    }
+    if (currentPrompt < prompts.length) {
+      // puts first prompt in all html elements with class prompt
+      $('.prompt').html(prompts[currentPrompt] + '<br><input type="text">');
+    }
     // move the next prompt into variable currentPrompt
     currentPrompt = currentPrompt + 1;
   // or else if we're at the end of the array
   } else {
-    $('.prompt').html("no more prompts here");
+    // runs showFinal to put the answers in HTML body
+    showFinal();
   }
 }
-
+// put the user's input into the html
+var showFinal = function () {
+  $('.prompt').html(answers[0]+' '+answers[1]+' '+answers[2]);
+}
 // run nextPrompt function when button is clicked
 $('button').click(function() {
   nextPrompt();
