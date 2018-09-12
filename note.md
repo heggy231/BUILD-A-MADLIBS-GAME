@@ -338,6 +338,18 @@ var showFinal = function () {
   $('button').hide();
 }
 
-  this belongs inside your showFinal function.
-  // and then hide the button
-  $('button').hide();
+* hide() function in JQuery is similar to the toggle() function you used in Esha's and Cotter's projects.  There is also show() function in JQuery!
+
+- Connect the dots: 
+  Last lesson, we concatenated 3 things inside an answers array.
+
+  var showFinal = function () {
+    // answers[0]:name, answers[1]:adjective, answers[2]:noun
+    $('.prompt').html(answers[0]+' '+answers[1]+' '+answers[2]);
+  }
+
+  - For this lesson: This is the story of [name] and the [adjective] [noun].
+  var showFinal = function () {
+    $('.prompt').html('This is the story of '+answers[0]+' and the '+answers[1]+' '+answers[2]);
+    $('button').hide();
+  }
